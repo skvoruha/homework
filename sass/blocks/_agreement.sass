@@ -1,0 +1,230 @@
+.agreement
+  margin-bottom: 103px
+  &__wrapper
+    display: flex
+    padding-top: 114px
+    padding-left: 23px
+  &__step
+    margin-right: 141px
+  &__num
+    $var: 36px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $grey_step
+    border-radius: 50%
+    width: $var
+    height: $var
+    color: #fff
+    z-index: 2
+    margin-bottom: 76px
+
+    &--step
+      background-color: $blue
+      &::after
+        content: ""
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        border: 1px solid #2196F3
+        box-sizing: border-box
+    &::before
+      content: ""
+      position: absolute
+      z-index: 1
+      width: 2px
+      height: 100px
+      background-color: $grey_step
+      top: 0+$var
+    &:last-child
+      margin-bottom: 0
+      &::before
+        height: 0
+        width: 0
+    &--blue
+      background-color: $blue
+      &::before
+        background-color: $blue
+  &__descrp
+    max-width: 480px
+    margin-right: 20px
+    &--share
+      padding-top: 51px
+    &--four
+      margin-top: -77px
+      max-width: 500px
+    &--five
+      margin-top: -36px
+      max-width: 550px
+  &__title
+    margin-top: 16px
+    font-weight: 700
+    font-size: 48px
+    line-height: 58px
+    margin-bottom: 31px
+
+    color: rgba(0, 0, 0, 0.6)
+  &__subtitle
+    margin-top: 0
+    font-weight: bold
+    font-size: 48px
+    line-height: 48px
+    margin-bottom: 20px
+    max-width: 406px
+    &--share
+      max-width: 500px
+    &--five
+      max-width: 550px
+      margin-bottom: 30px
+  &__text
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+
+    color: rgba(0, 0, 0, 0.6)
+    margin-bottom: 20px
+    &--share
+      margin-bottom: 48px
+    &--three
+      margin-bottom: 45px
+  &__list
+    font-size: 18px
+    line-height: 22px
+
+    color: rgba(0, 0, 0, 0.6)
+    margin-bottom: 40px
+  &__element
+    text-indent: 6px
+  &__image
+    margin-top: -12px
+    &--share
+      margin-top: 20px
+      margin-left: 2px
+  &--five
+    margin-bottom: 75px
+.share
+  margin-bottom: 112px
+  position: relative
+  &__image
+    position: absolute
+    top: 97.3%
+    left: 58.2%
+    transform: translateX(-50%)
+  &__button
+    display: flex
+  &__btn
+    width: 179px
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    cursor: pointer
+    font-weight: 700
+    font-size: 18px
+    line-height: 22px
+    text-transform: uppercase
+
+    color: #FFFFFF
+    background: #000000
+    border-radius: 5px
+    margin-bottom: 20px
+    &--no
+      margin-left: 21px
+      background: rgba(0, 0, 0, 0.6)
+  &__three
+    margin-bottom: 102px
+  &__list
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+
+    color: rgba(0, 0, 0, 0.6)
+    list-style-type: none
+    counter-reset: li
+  &__element
+    counter-increment: li
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    & p
+      margin: 0
+      padding: 0
+    &::before
+      min-width: 28px
+      height: 28px
+      background-color: $black
+      content: counter(li)
+      color: #fff
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      direction: ltr
+      border-radius: 50%
+      margin-left: -25px
+      margin-right: 13px
+      margin-top: -2px
+    &--text
+      font-weight: 700
+    &--inblock
+      margin-bottom: 24px
+    &:last-child
+      margin-bottom: 39px
+      &::before
+        min-width: 28px
+        height: 28px
+        background-color: $black
+
+        color: #fff
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        direction: ltr
+        border-radius: 50%
+        margin-left: -25px
+        margin-right: 13px
+        margin-top: -2px
+        // content: url("image/prize.svg")
+        content: url('../image/prize.svg')
+  &__four
+    &--text
+      width: 100%
+      font-weight: 700
+      font-size: 18px
+      line-height: 22px
+      color: rgba(0, 0, 0, 0.6)
+      margin-left: 101px
+.price__btn--four
+  margin-bottom: 20px
+.agreement__four
+  margin-bottom: 53px
+.bold
+  font-weight: 700
+.agreement__image--absolute
+  position: absolute
+  right: 9.7%
+.amazonSvg
+  margin-left: 10px
+.price__btn--five
+  margin-bottom: 57px
+
+.agreement__subtext
+  margin: 0
+  max-width: 420px
+  font-style: italic
+  font-weight: 400
+  font-size: 14px
+  line-height: 17px
+  color: rgba(0, 0, 0, 0.6)
+  margin-bottom: 20px
+.agreement__text--five
+  max-width: 390px
+  margin: 0
+  margin-bottom: 9px
+.share__animate
+  display: none
